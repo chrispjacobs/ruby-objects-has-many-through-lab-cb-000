@@ -27,6 +27,7 @@ class Genre
         end
       end
       if unique_artist == true
+        puts "I am about to put #{song.artist} into result_array as part of #artists."
         result_array << song.artist
       end
       result_array
