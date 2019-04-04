@@ -7,7 +7,6 @@ class Doctor
   attr_accessor :name
   def new_appointment(patient_object, date)
     new_appt = appointment.new(patient_object, self, date)
-    new_appt.doctor = self
     new_appt
   end
   def appointments
@@ -34,5 +33,8 @@ class Doctor
       end
     end
     solution_array
+  end
+  def self.all
+    @@all
   end
 end
