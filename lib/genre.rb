@@ -18,19 +18,19 @@ class Genre
     result_array
   end
   def artists
-    result_array = []
+    resulting_array = []
     self.songs.each do |song|
       unique_artist = true
-      result_array.each do |existing_artist|
+      resulting_array.each do |existing_artist|
         if existing_artist == song.artist
           unique_artist = false
         end
       end
       if unique_artist == true
-        puts "I am about to put #{song.artist} into result_array as part of #artists."
-        result_array << song.artist
+        puts "I am about to put #{song.artist} into resulting_array as part of #artists."
+        resulting_array << song.artist
       end
-      result_array
     end
+    result_array
   end
 end
