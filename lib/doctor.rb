@@ -11,7 +11,7 @@ class Doctor
   end
   def appointments
     resulting_array = []
-    Appointment.all do |appointment|
+    Appointment.all.each do |appointment|
       if appointment.doctor == self
         resulting_array << appointment
       end
