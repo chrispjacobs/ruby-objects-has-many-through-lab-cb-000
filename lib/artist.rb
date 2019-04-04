@@ -24,18 +24,18 @@ class Artist
     resulting_songs
   end
   def genres
-    @genres_of_this_artist = []
+    resulting_genres = []
     self.songs.each do |song|
       unique_genre = true
-      @genres_of_this_artist.each do |existing_genre|
+      resulting_genres.each do |existing_genre|
         if existing genre == song.genre
           unique_genre = false
         end
       end
       if unique_genre == true
-        @genres_of_this_artist << song.genre
+        resulting_genres << song.genre
       end
     end
-    @genres_of_this_artist
+    resulting_genres
   end
 end
