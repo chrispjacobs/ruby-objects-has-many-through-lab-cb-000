@@ -13,6 +13,7 @@ class Artist
     new_song.artist = self
     new_song.genre = genre
     new_song.name = name
+    new_song
   end
   def songs
     resulting_songs = []
