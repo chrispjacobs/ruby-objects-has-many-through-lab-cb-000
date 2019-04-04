@@ -5,4 +5,10 @@ class Appointment
     @patient = patient
     @doctor = doctor
     @date = date
+    @@all << self
+    self
+  end
+  def self.all
+    @@all
+  end
 end
