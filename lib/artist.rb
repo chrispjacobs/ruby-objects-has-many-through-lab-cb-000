@@ -15,13 +15,13 @@ class Artist
     new_song.name = name
   end
   def songs
-    @songs_of_this_artist = []
+    resulting_songs = []
     Song.all.each do |song|
       if song.artist == self
-        @songs_of_this_artist << song
+        resulting_songs << song
       end
     end
-    @songs_of_this_artist
+    resulting_songs
   end
   def genres
     @genres_of_this_artist = []
