@@ -33,7 +33,6 @@ class Artist
         end
       end
       if unique_genre == true
-        puts "I am about to put #{song.genre} into the @genres_of_this_artist array."
         @genres_of_this_artist << song.genre
       end
     end
