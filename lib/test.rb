@@ -24,8 +24,3 @@ puts "jay_z.songs should include the song #{ninety_nine_problems}"
 puts "jay_z.songs returns #{jay_z.songs}"
 puts "ninety_nine_problems.artist should return #{jay_z}"
 puts "ninety_nine_problems.artist returns #{ninety_nine_problems.artist}"
-
-    expect(jay_z.songs).to include(ninety_nine_problems)
-    expect(ninety_nine_problems.artist).to eq(jay_z)
-  end
-end
