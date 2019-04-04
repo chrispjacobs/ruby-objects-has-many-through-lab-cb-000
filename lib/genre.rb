@@ -31,6 +31,6 @@ class Genre
         resulting_array << song.artist
       end
     end
-    result_array
+    resulting_array
   end
 end
