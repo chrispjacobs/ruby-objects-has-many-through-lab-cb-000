@@ -6,7 +6,7 @@ class Doctor
   end
   attr_accessor :name
   def new_appointment(patient_object, date)
-    new_appt = appointment.new(patient_object, self, date)
+    new_appt = Appointment.new(patient_object, self, date)
     new_appt
   end
   def appointments
